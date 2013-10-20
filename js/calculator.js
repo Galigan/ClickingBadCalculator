@@ -11,8 +11,164 @@ var BIG_NUMBER_PLACEHOLDER=1000000000000000000000000;
 
 var globalTable = {
     'totalProduction': 0,
-    'totalDistribution': 0
-}
+    'totalDistribution': 0,
+    
+    'production' : {
+        'Storage Shed' : {
+            'BaseCost' : 20,
+            'Number' : 0,
+            'CurrentCost' : 20,
+            'CookPerSec' : 0.2,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+
+        'Used RV' : {
+            'BaseCost' : 210,
+            'Number' : 0,
+            'CurrentCost' : 210,
+            'CookPerSec' : 1,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+       'Abandoned Trailer' : {
+            'BaseCost' : 1000,
+            'Number' : 0,
+            'CurrentCost' : 1000,
+            'CookPerSec' : 5,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Small House' : {
+            'BaseCost' : 5000,
+            'Number' : 0,
+            'CurrentCost' : 5000,
+            'CookPerSec' : 25,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Abandoned Warehouse' : {
+            'BaseCost' : 25000,
+            'Number' : 0,
+            'CurrentCost' : 25000,
+            'CookPerSec' : 100,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Laboratory' : {
+            'BaseCost' : 125000,
+            'Number' : 0,
+            'CurrentCost' : 125000,
+            'CookPerSec' : 500,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Underground Laboratory' : {
+            'BaseCost' : 6250000,
+            'Number' : 0,
+            'CurrentCost' : 6250000,
+            'CookPerSec' : 2000,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Meth-o-matic 9000' : {
+            'BaseCost' : 35000000,
+            'Number' : 0,
+            'CurrentCost' : 35000000,
+            'CookPerSec' : 13000,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Meth-o-matic 9000S' : {
+            'BaseCost' : 40000000,
+            'Number' : 0,
+            'CurrentCost' : 40000000,
+            'CookPerSec' : 14000,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Subterranean Complex' : {
+            'BaseCost' : 50500000,
+            'Number' : 0,
+            'CurrentCost' : 50500000,
+            'CookPerSec' : 50000,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Island State' : {
+            'BaseCost' : 25010000,
+            'Number' : 0,
+            'CurrentCost' : 25010000,
+            'CookPerSec' : 105000,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Moonlab Alpha' : {
+            'BaseCost' : 32501000,
+            'Number' : 0,
+            'CurrentCost' : 32501000,
+            'CookPerSec' : 11500000,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Meth Star' : {
+            'BaseCost' : 16325010,
+            'Number' : 0,
+            'CurrentCost' : 16325010,
+            'CookPerSec' : 11205000,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        },
+        
+        'Heisenbelt' : {
+            'BaseCost' : 41032500000000,
+            'Number' : 0,
+            'CurrentCost' : 41032500000000,
+            'CookPerSec' : 55205000,
+            'TotalPerSec' : 0,
+            'Amortization' : 0,
+            'TimeToGet' : 0,
+            'TotalTimeEfficiency' : 0
+        }
+    } //end production array
+};
 
 var productionCurrentCost = new Array();
 var distributionCurrentCost = new Array();
