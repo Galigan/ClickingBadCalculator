@@ -19,107 +19,230 @@ and open the template in the editor.
                     <th>Name</th>
                     <th>Amount</th>
                     <th>Cost</th>
-                    <th>Cumulative</th>
+                    <th>Current Cost</th>
                     <th>CookspS</th>
                     <th>TotalCookspS</th>
                     <th>Amortization</th>
                     <th>Time to Get</th>
-                    <th>Total Time</th>
+                    <th>Total Time Efficency</th>
                 </tr>
-                <tr id="storageshed">
+                <tr id="production0">
                     <td>Storage Shed</td>
                     <td>
-                        <a id="storageshedinm" class="plusminus">-</a>
-                        <input id="storageshedin" value="0" maxlength="3" type="text">
-                        <a id="storageshedinp" class="plusminus">+</a>
+                        <a class="minus">-</a>
+                        <input class="num" value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
                     </td>
-                    <td id="storageshedcost">20</td>
-                    <td id="storageshedcumulative">0</td>
-                    <td id="storageshedcps">0,2</td>
-                    <td id="storageshedtotalcps">0</td>
-                    <td id="storageshedamort">0</td>
-                    <td id="storageshedtimetoget">0</td>
-                    <td id="storageshedtotaltime">0</td>
+                    <td class="cost">20</td>
+                    <td class="cumulative">0</td>
+                    <td class="cps">0,2</td>
+                    <td class="totalcps">0</td>
+                    <td class="amort">0</td>
+                    <td class="timetoget">0</td>
+                    <td class="efficency">0</td>
                 </tr>
-                <tr id="usedrv">
+                <tr id="production1">
                     <td>Used RV</td>
                     <td>
-                        <a id="usedrvinm" class="plusminus">-</a>
-                        <input id="usedrvin" value="0" maxlength="3" type="text">
-                        <a id="usedrvinp" class="plusminus">+</a>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
                     </td>
-                    <td id="usedrvcost">210</td>
-                    <td id="usedrvcumulative">0</td>
-                    <td id="usedrvcps">1</td>
-                    <td id="usedrvtotalcps">0</td>
-                    <td id="usedrvamort">0</td>
-                    <td id="usedrvtimetoget">0</td>
-                    <td id="usedrvtotaltime">0</td>
+                    <td id="cost">210</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">1</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
                 </tr>
-                <tr id="abandonedtrailer">
+                <tr id="production2">
                     <td>Abandoned Trailer</td>
                     <td>
-                        <a id="abandonedtrailerinm" class="plusminus">-</a>
-                        <input id="abandonedtrailerin" value="0" maxlength="3" type="text">
-                        <a id="abandonedtrailerinp" class="plusminus">+</a>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
                     </td>
-                    <td id="abandonedtrailercost">1000</td>
-                    <td id="abandonedtrailercumulative">0</td>
-                    <td id="abandonedtrailercps">5</td>
-                    <td id="abandonedtrailertotalcps">0</td>
-                    <td id="abandonedtraileramort">0</td>
-                    <td id="abandonedtrailertimetoget">0</td>
-                    <td id="abandonedtrailertotaltime">0</td>
+                    <td id="cost">1000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">5</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
                 </tr>
-                <tr id="smallhouse">
+                <tr id="production3">
                     <td>Small House</td>
                     <td>
-                        <a id="smallhouseinm" class="plusminus">-</a>
-                        <input id="smallhousein" value="0" maxlength="3" type="text">
-                        <a id="smallhouseinp" class="plusminus">+</a>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
                     </td>
-                    <td id="smallhousecost">5000</td>
-                    <td id="smallhousecumulative">0</td>
-                    <td id="smallhousecps">25</td>
-                    <td id="smallhousetotalcps">0</td>
-                    <td id="smallhouseamort">0</td>
-                    <td id="smallhousetimetoget">0</td>
-                    <td id="smallhousetotaltime">0</td>
+                    <td id="cost">5000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">25</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
                 </tr>
-                <tr id="abandonedwarehouse">
+                <tr id="production4">
                     <td>Abandoned Warehouse</td>
                     <td>
-                        <a id="abandonedwarehouseinm" class="plusminus">-</a>
-                        <input id="abandonedwarehousein" value="0" maxlength="3" type="text">
-                        <a id="abandonedwarehouseinp" class="plusminus">+</a>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
                     </td>
-                    <td id="abandonedwarehousecost">25000</td>
-                    <td id="abandonedwarehousecumulative">0</td>
-                    <td id="abandonedwarehousecps">100</td>
-                    <td id="abandonedwarehousetotalcps">0</td>
-                    <td id="abandonedwarehouseamort">0</td>
-                    <td id="abandonedwarehousetimetoget">0</td>
-                    <td id="abandonedwarehousetotaltime">0</td>
+                    <td id="cost">25000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">100</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
                 </tr>
-                <tr id="laboratory">
+                <tr id="production5">
                     <td>Laboratory</td>
                     <td>
-                        <a id="laboratoryinm" class="plusminus">-</a>
-                        <input id="laboratoryin" value="0" maxlength="3" type="text">
-                        <a id="laboratoryinp" class="plusminus">+</a>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
                     </td>
-                    <td id="laboratorycost">125000</td>
-                    <td id="laboratorycumulative">0</td>
-                    <td id="laboratorycps">500</td>
-                    <td id="laboratorytotalcps">0</td>
-                    <td id="laboratoryamort">0</td>
-                    <td id="laboratorytimetoget">0</td>
-                    <td id="laboratorytotaltime">0</td>
+                    <td id="cost">125000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">500</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
+                </tr>
+                <tr id="production6">
+                    <td>Underground Laboratory</td>
+                    <td>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
+                    </td>
+                    <td id="cost">6250000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">2000</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
+                </tr>
+                <tr id="production7">
+                    <td>Meth-o-matic 9000</td>
+                    <td>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
+                    </td>
+                    <td id="cost">35000000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">13000</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
+                </tr>
+                <tr id="production8">
+                    <td>Meth-o-matic 9000S</td>
+                    <td>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
+                    </td>
+                    <td id="cost">40000000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">14000</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
+                </tr>
+                <tr id="production9">
+                    <td>Subterranean Complex</td>
+                    <td>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
+                    </td>
+                    <td id="cost">505000000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">50000</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
+                </tr>
+                <tr id="production10">
+                    <td>Island State</td>
+                    <td>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
+                    </td>
+                    <td id="cost">2501000000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">105000</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
+                </tr>
+               <tr id="production11">
+                    <td>Moonlab Alpha</td>
+                    <td>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
+                    </td>
+                    <td id="cost">32501000000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">1150000</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
+                </tr>
+                <tr id="production12">
+                    <td>Meth Star</td>
+                    <td>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
+                    </td>
+                    <td id="cost">1632501000000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">11205000</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
+                </tr>
+                <tr id="production13">
+                    <td>Heisenbelt</td>
+                    <td>
+                        <a class="minus">-</a>
+                        <input value="0" maxlength="3" type="text">
+                        <a class="plus">+</a>
+                    </td>
+                    <td id="cost">41032500000000</td>
+                    <td id="cumulative">0</td>
+                    <td id="cps">55205000</td>
+                    <td id="totalcps">0</td>
+                    <td id="amort">0</td>
+                    <td id="timetoget">0</td>
+                    <td id="efficency">0</td>
                 </tr>
                 
-                <tr id="total" class="section">
-                    <td>Totals</td><td id="totalin">0</td><td></td><td id="totalcumulative">0</td><td id="totalcps">0</td>
-                    <td><small>(multiplier: <span id="totalmult">100</span>%)</small><td class="ccps hidden"></td><td colspan="2"><span id="noclicking">Cookies per click: <span id="cpc1">1</span></span></td>
+                <tr id="totalProduction">
+                    <td>Totals</td>
+                    <td id="totalInProduction">0</td>
+                    <td></td>
+                    <td id="totalCumulativeProduction">0</td>
+                    <td id="totalCpsProduction">0</td>
                 </tr>
             </table>
         </form>
