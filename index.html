@@ -16,18 +16,31 @@ and open the template in the editor.
         <form id="form" action="cookies.js">
             <table id="buildtable">
                 <tr>
-                    <th>Name</th><th>Amount</th><th>Cost</th><th>Cumulative</th><th>CpS</th><th>Time for</th>
-                    <th>+CpS</th><th>Amortization</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Cost</th>
+                    <th>Cumulative</th>
+                    <th>CookspS</th>
+                    <th>TotalCookspS</th>
+                    <th>Amortization</th>
+                    <th>Time to Get</th>
+                    <th>Total Time</th>
                 </tr>
-                <tr id="cursor">
-                    <td>Cursor</td>
+                <tr id="storageshed">
+                    <td>Storage Shed</td>
                     <td>
                         <a id="cursorinm" class="plusminus">-</a>
                         <input id="cursorin" value="0" maxlength="3" type="text">
                         <a id="cursorinp" class="plusminus">+</a>
                     </td>
-                    <td id="cursorcost">15</td><td id="cursorcumulative">0</td><td id="cursorcps">0</td><td id="cursortyme">---</td>
-                    <td id="cursorncps">0</td><td id="cursoramort">---</td>
+                    <td id="storageshedcost">20</td>
+                    <td id="storageshedcumulative">0</td>
+                    <td id="storageshedcps">0,2</td>
+                    <td id="storageshedtotalcps">0</td>
+                    <td id="storageshedamort">0</td>
+                    <td id="storageshedtimetoget">0</td>
+                    <td id="storageshedtotaltime">0</td>
+                    
                 </tr>
                 
                 <tr id="total" class="section">
