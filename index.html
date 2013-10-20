@@ -1,0 +1,41 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="js/calculator.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <noscript>Please enable javascript.<br><br></noscript>
+        <form id="form" action="cookies.js">
+            <table id="buildtable">
+                <tr>
+                    <th>Name</th><th>Amount</th><th>Cost</th><th>Cumulative</th><th>CpS</th><th>Time for</th>
+                    <th>+CpS</th><th>Amortization</th>
+                </tr>
+                <tr id="cursor">
+                    <td>Cursor</td>
+                    <td>
+                        <a id="cursorinm" class="plusminus">-</a>
+                        <input id="cursorin" value="0" maxlength="3" type="text">
+                        <a id="cursorinp" class="plusminus">+</a>
+                    </td>
+                    <td id="cursorcost">15</td><td id="cursorcumulative">0</td><td id="cursorcps">0</td><td id="cursortyme">---</td>
+                    <td id="cursorncps">0</td><td id="cursoramort">---</td>
+                </tr>
+                
+                <tr id="total" class="section">
+                    <td>Totals</td><td id="totalin">0</td><td></td><td id="totalcumulative">0</td><td id="totalcps">0</td>
+                    <td><small>(multiplier: <span id="totalmult">100</span>%)</small><td class="ccps hidden"></td><td colspan="2"><span id="noclicking">Cookies per click: <span id="cpc1">1</span></span></td>
+                </tr>
+            </table>
+        </form>
+        <br>
+    </body>
+</html>
